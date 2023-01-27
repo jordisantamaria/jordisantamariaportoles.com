@@ -1,8 +1,14 @@
+import { Hero } from "~/components/landingPage/Hero";
+import { StoryTelling } from "~/components/landingPage/StoryTelling";
+import { MainContainer } from "~/components/MainContainer";
+import { Nav } from "~/components/Nav";
 
 export default function Index() {
   return (
-    <main className="relative min-h-screen bg-white sm:flex sm:items-center sm:justify-center">
-      Hello world
-    </main>
+    <MainContainer>
+      <Nav />
+      <Hero/>
+      <StoryTelling/>
+    </MainContainer>
   );
 }

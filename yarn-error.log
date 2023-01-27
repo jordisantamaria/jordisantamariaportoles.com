@@ -1,5 +1,5 @@
 Arguments: 
-  /home/jordi/.nvm/versions/node/v16.14.0/bin/node /usr/share/yarn/bin/yarn.js add isBot
+  /home/jordi/.nvm/versions/node/v16.14.0/bin/node /usr/share/yarn/bin/yarn.js add -D @svgr/cli @svgr/plugin-svgo @svgr/plugin-jsx @svgr/plugin-prettier npm-watch npm-run-allnpm-watch npm-run-all
 
 PATH: 
   /home/jordi/.rbenv/plugins/ruby-build/bin:/home/jordi/.rbenv/shims:/home/jordi/.rbenv/bin:/home/jordi/.config/composer/vendor/bin:~/programs//bin:/usr/local/opt/libpq/bin:/home/jordi/.nvm/versions/node/v16.14.0/bin:/home/jordi/.rbenv/plugins/ruby-build/bin:/home/jordi/.rbenv/shims:/home/jordi/.rbenv/bin:/home/jordi/.config/composer/vendor/bin:~/programs//bin:/usr/local/opt/libpq/bin:/home/jordi/.local/kitty.app/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/jordi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jordi/.oh-my-zsh/custom/plugins/warhol/bin:/home/jordi/.yarn/bin:/home/jordi/.oh-my-zsh/custom/plugins/warhol/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/isBot: Not found
+  Error: https://registry.yarnpkg.com/npm-run-allnpm-watch: Not found
       at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:67029:18)
       at Request.self.callback (/usr/share/yarn/lib/cli.js:140883:22)
       at Request.emit (node:events:520:28)
@@ -61,6 +61,7 @@ npm manifest:
       "@remix-run/react": "^1.7.5",
       "@remix-run/serve": "^1.7.5",
       "@remix-run/server-runtime": "^1.7.5",
+      "isbot": "^3.6.5",
       "react": "^18.2.0",
       "react-dom": "^18.2.0",
       "tiny-invariant": "^1.2.0"
@@ -5970,6 +5971,11 @@ Lockfile:
     version "2.0.5"
     resolved "https://registry.yarnpkg.com/isarray/-/isarray-2.0.5.tgz#8af1e4c1221244cc62459faf38940d4e644a5723"
     integrity sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==
+  
+  isbot@^3.6.5:
+    version "3.6.5"
+    resolved "https://registry.yarnpkg.com/isbot/-/isbot-3.6.5.tgz#a749980d9dfba9ebcc03ee7b548d1f24dd8c9f1e"
+    integrity sha512-BchONELXt6yMad++BwGpa0oQxo/uD0keL7N15cYVf0A1oMIoNQ79OqeYdPMFWDrNhCqCbRuw9Y9F3QBjvAxZ5g==
   
   isexe@^2.0.0:
     version "2.0.0"
