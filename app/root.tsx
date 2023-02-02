@@ -9,9 +9,10 @@ import {
 import { LinksFunction, MetaFunction } from "@remix-run/server-runtime";
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
+import globalStyles from './styles/global.css'
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: tailwindStylesheetUrl }];
+  return [{ rel: "stylesheet", href: tailwindStylesheetUrl }, { rel: "stylesheet", href: globalStyles }];
 };
 
 export const meta: MetaFunction = () => ({
@@ -28,7 +29,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="h-full bg-background">
+      <body className="h-full bg-background text-primary-light">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
